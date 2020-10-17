@@ -2,7 +2,7 @@
 
 ![Alt Text](demo.gif)
 
-This is a small project I worked on to learn more about reinforcement learning. The agent uses a Deep Q Network to find the optimal action given a state. Note that this agent uses as simple learning method, and does not have a target network. I look to improve on this in the future.
+This is a small project I worked on to learn more about reinforcement learning. (I've made it public for a couple of my friends.) The agent uses a Deep Q Network to find the optimal action given a state. Note that this agent uses as simple learning method, and does not have a target network. I look to improve on this in the future.
 
 ## Files
 
