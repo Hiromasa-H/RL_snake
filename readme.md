@@ -19,9 +19,11 @@ A quick explanation of what each file does.
 
 ## Notes
 
-- requirements.txt contains unnecessary dependencies. (since this was made with pip freeze on a large environment that was meant to emcompass all projects)
+- requirements.txt contains unnecessary dependencies. (since this was made with pip freeze on a large environment that was meant to emcompass some of my other personal projects)
 
 - snake's score seems to plateu at around 3,000 episodes.
+
+- snake has a habit of occasionally running into itself, especially when the apple spawns in the opposite direction, or the snake is facing a wall
 
 ## References
 
