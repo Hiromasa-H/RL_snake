@@ -1,5 +1,7 @@
 # Snake AI
 
+[ [日本語](<README(JA).md>) ]
+
 ![Alt Text](demo.gif)
 
 This is a small project I worked on to learn more about reinforcement learning. (I've made it public for a couple of my friends.) The agent uses a Deep Q Network to find the optimal action given a state. Note that this agent uses as simple learning method, and does not have a target network. I look to improve on this in the future.
@@ -14,16 +16,16 @@ A quick explanation of what each file does.
 | demo.py  | uses a pre-trained network to create a demo video (demo.mp4)                                    |
 | game.py  | contains the game (SnakeGame)                                                                   |
 | train.py | used for training. Hyperparameters must be edited via the file. (will fix later)                |
-| utils.py | contains utility functions for creating plots and videso                                        |
+| utils.py | contains utility functions for creating plots and videos                                        |
 | video.py | seperate video function with the ability to choose which frames to begin from and end at. (WIP) |
 
 ## Notes
 
 - requirements.txt contains unnecessary dependencies. (since this was made with pip freeze on a large environment that was meant to emcompass some of my other personal projects)
 
-- snake's score seems to plateu at around 3,000 episodes.
+- snake's score seems to plateau at around 3,000 episodes.
 
-- snake has a habit of occasionally running into itself, especially when the apple spawns in the opposite direction, or the snake is facing a wall
+- snake has a habit of occasionally running into itself, especially when the apple spawns on the opposite side of its body. This is most likely because of a shortage of this particular situtation in the replay memory. Afterall this situation only occurs once every 200 ~ 500 steps, meaning that there are only 200 ~ 500 examples of this in the 100,000 long memory. This may be the cause of the score plateauing at 3,000 episodes.
 
 ## References
 
